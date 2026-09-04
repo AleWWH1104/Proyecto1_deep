@@ -26,3 +26,6 @@ Thumbs.db
 .vscode/
 .idea/
 data/*.csv
+
+# Documentos locales, no se suben
+docs/
