@@ -1,0 +1,36 @@
+{
+  "modelo_recomendado": "C",
+  "cat2cod": {
+    "entertainment": 0,
+    "food_dining": 1,
+    "gas_transport": 2,
+    "grocery_net": 3,
+    "grocery_pos": 4,
+    "health_fitness": 5,
+    "home": 6,
+    "kids_pets": 7,
+    "misc_net": 8,
+    "misc_pos": 9,
+    "personal_care": 10,
+    "shopping_net": 11,
+    "shopping_pos": 12,
+    "travel": 13
+  },
+  "longitud_secuencia": 10,
+  "columnas_agregadas": [
+    "monto_prom_24h",
+    "n_tx_ultima_hora",
+    "monto_max_dia",
+    "diversidad_comercio"
+  ],
+  "columnas_evento": [
+    "amt",
+    "category_cod",
+    "hora_del_dia",
+    "dias_desde_ultima_tx"
+  ],
+  "n_categorias": 14,
+  "umbral_operativo": 0.060000000000000005,
+  "costo_fraude_no_detectado": 4200,
+  "costo_bloqueo_legitimo": 180
+}
