@@ -37,7 +37,7 @@ def construir_agregados(df: pd.DataFrame) -> pd.DataFrame:
         g["n_tx_ultima_hora"] = g["amt"].rolling("1h").count()
         g["monto_max_dia"] = g["amt"].rolling("1D").max()
         g["diversidad_comercio"] = (
-            g["category"].rolling("24h").apply(lambda x: pd.Series(x).nunique(), raw=False)
+            g["category_cod"].rolling("24h").apply(lambda x: pd.Series(x).nunique(), raw=True)
         )
         agregados.append(g)
 
